@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
 
 @RestController
 public class TestController {
@@ -13,7 +12,7 @@ public class TestController {
     @RequestMapping("/test")
     public ModelAndView TestDemo() {
         ModelAndView modelAndView = new ModelAndView("hello");
-        modelAndView.addObject("test","teste");
+        modelAndView.addObject("test","你好");
         return modelAndView;
     }
 }
