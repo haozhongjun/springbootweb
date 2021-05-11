@@ -12,7 +12,7 @@ public class TestController {
     @RequestMapping("/test")
     public ModelAndView TestDemo() {
         ModelAndView modelAndView = new ModelAndView("hello");
-        modelAndView.addObject("test","你好");
+        modelAndView.addObject("test","123");
         return modelAndView;
     }
 }
